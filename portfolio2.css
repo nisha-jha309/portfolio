@@ -384,7 +384,7 @@
 #skill-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
     justify-content: left;
     align-items: center;
     margin: 0 50px;
