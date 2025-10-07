@@ -555,17 +555,17 @@
 @keyframes git {
     0% {
         top: 80px;
-        left: -10%;
+        left: 1%;
     }
 
     50% {
         top: 100px;
-        left: -10%;
+        left: 1%;
     }
 
     100% {
         top: 80px;
-        left: -10%;
+        left: 1%;
     }
 }
 
