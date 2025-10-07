@@ -714,7 +714,9 @@ padding: 30px 0;
     #nav {
         justify-content: space-between;
     }
-
+     #projects-container{
+    grid-template-columns: 1fr;
+}
     #burgerMenu {
         display: block;
     }
@@ -730,7 +732,7 @@ padding: 30px 0;
     grid-template-columns: 1fr;
 }
 }
-@media only screen and (max-width:900px){
+@media only screen and (min-width: 769px) and (max-width: 900px){
     #projects-container{
     grid-template-columns: 1fr 1fr;
 }
