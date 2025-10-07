@@ -785,6 +785,10 @@
     #viewResume {
         font-size: 12px;
     }
+    #skill-text{
+        text-align: left;
+        margin-left: 0;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 900px) {
