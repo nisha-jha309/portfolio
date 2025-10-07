@@ -544,7 +544,7 @@
     width: 120px;
     height: 120px;
     top: 10px;
-    left: 6%;
+    left: -5%;
     animation: git 2s ease 0.1s infinite;
 }
 
@@ -555,17 +555,17 @@
 @keyframes git {
     0% {
         top: 80px;
-        left: 1%;
+        left: -5%;
     }
 
     50% {
         top: 100px;
-        left: 1%;
+        left: -5%;
     }
 
     100% {
         top: 80px;
-        left: 1%;
+        left: -5%;
     }
 }
 
