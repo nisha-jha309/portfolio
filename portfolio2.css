@@ -1,0 +1,746 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+:root {
+    --btn-padding: 10px 20px;
+    --btn-backgroundColor: rgb(247, 247, 100);
+    --background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(247, 247, 100, 1) 28%, rgba(247, 125, 100, 1) 100%);
+
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    padding: 0 50px;
+
+}
+
+#logo {
+    font-weight: 500;
+    font-size: 28px;
+    color: white;
+}
+
+#logo>span {
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(247, 247, 100, 1) 28%, rgba(247, 125, 100, 1) 100%);
+-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#nav-links {
+    display: flex;
+    gap: 45px;
+    font-size: 18px;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#id-links {
+    display: flex;
+    gap: 30px;
+    color: whitesmoke;
+}
+
+#id-links a {
+    text-decoration: none;
+    color: white;
+}
+
+#id-links a>i {
+    font-size: 24px;
+}
+
+#burgerMenu {
+    position: relative;
+    display: none;
+}
+
+#Menu i {
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+#nav-links-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    top: 30px;
+    left: -50px;
+    width: 150px;
+    align-items: center;
+}
+
+#nav-links-mobile>a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding: 5px;
+}
+
+#Home {
+    background: url("painted-concrete-background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    gap: 30px;
+}
+
+#home-text>hr {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(247, 247, 100, 1) 28%, rgba(247, 125, 100, 1) 100%);
+}
+
+
+#hi {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+}
+
+#typeWriter {
+    color: var(--btn-backgroundColor);
+    font-size: 42px;
+}
+
+#home-para {
+    width: 70%;
+    color: white;
+    display: none;
+}
+
+#home-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 23, 24, 0.808);
+}
+
+#home-text {
+    z-index: 1;
+    border: 1px solid whitesmoke;
+    border-radius: 16px;
+    padding: 90px 50px;
+    width: 100%;
+    margin: 100px 0;
+}
+
+#cta-btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+#viewWork,
+#viewResume {
+    padding: var(--btn-padding);
+    border: 1px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#viewResume{
+    background-color: white;
+    color: black;
+}
+#DownloadResumeBtn {
+    padding: var(--btn-padding);
+    color: white;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    background: linear-gradient(#000, #000) padding-box, var(--background) border-box;
+    background-clip: padding-box, border-box;
+}
+
+#viewWork:hover,
+#viewResume:hover,
+#DownloadResumeBtn:hover {
+    transform: scale(1.03);
+    backdrop-filter: blur(10px);
+}
+
+#viewWork {
+    background-color: transparent;
+    color: white;
+}
+@media only screen and (max-width:768px) {
+    #Home {
+        height: 600px;
+    }
+    #hi {
+        font-size: 40px;
+    }
+
+    #typeWriter {
+        font-size: 20px;
+    }
+
+    #home-para {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+#About {
+    background-color: black;
+    padding: 50px 50px 0 50px;
+    display: flex;
+    align-items: center;
+    height: 700px;
+    gap: 100px;
+}
+
+#aboutImage {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+
+}
+
+#aboutImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#about-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#about-heading {
+    font-size: 40px;
+    color: white;
+    width: 150px;
+    padding-left: 10px;
+    border-left: 1px solid transparent;
+    background: transparent padding-box, var(--background) border-box;
+    background-clip: padding-box, border-box;
+}
+
+#aboutPara {
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+#Projects {
+    padding: 50px 50px;
+    background-color: black;
+}
+
+#projects-container{
+padding: 30px 0;
+    display: grid;
+    gap:30px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+.project {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    backdrop-filter: blur(10px);
+    background-color:whitesmoke;
+    height: 500px;
+    width:100%;
+}
+
+.project>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projectDemo {
+    /* width: 40px; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(34, 193, 195, 1);
+    color: rgba(34, 193, 195, 1);
+    border-radius:50%;
+    padding:4px 8px;
+    font-size:14px;
+}
+
+.projectDemo i {
+    font-size: 20px;
+}
+
+.projectImage {
+    height: 250px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.projectImage img {
+    height:100%;
+    width: 100%;
+    object-fit:fill;
+}
+
+.projectName {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.projectDescription {
+    font-size: 14px;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.techUsed {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tech {
+    background-color: grey;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+
+.git-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.git-display>a {
+    text-decoration: none;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#Skills {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* justify-content: center; */
+    align-items: left;
+    padding: 50px 150px;
+    background-color: #000;
+    position: relative;
+    height:600px;
+}
+
+.skill {
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(127, 160, 250, 0.623);
+    border-radius: 50%;
+    /* background: linear-gradient(#000, #000) padding-box, var(--background) border-box; */
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.596),
+        inset 0 0 10px rgba(255, 255, 255, 0.425),
+        inset 0 0 15px rgba(255, 255, 255, 0.225);
+    background-clip: padding-box, border-box;
+    position: absolute;
+}
+
+#skill-separation {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+}
+
+#skill-separation img {
+    width: 100%;
+    height: 100%;
+}
+
+#skill-content {
+    display: flex;
+    gap: 50px;
+    justify-content: left;
+    align-items: center;
+}
+
+#react {
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    left: 50%;
+        animation: react 2s ease 0.1s infinite;
+
+}
+
+#react i {
+    font-size: 75px;
+}
+
+@keyframes react {
+    0% {
+      top: 100px;
+    left: 40%;
+    }
+
+    50% {
+     top: 105px;
+    left: 40%;
+    }
+
+    100% {
+     top: 100px;
+    left: 40%;
+    }
+}
+
+#html5 {
+    width: 130px;
+    height: 130px;
+    top: 10px;
+    left: 5%;
+    animation: html 2s ease 0.1s infinite;
+}
+
+#html5 i {
+    font-size: 65px;
+}
+
+@keyframes html {
+    0% {
+        top: 10px;
+        left: 5%;
+    }
+
+    50% {
+        top: 40px;
+        left: 5%;
+    }
+
+    100% {
+        top: 10px;
+        left: 5%;
+    }
+}
+
+#css3 {
+    width: 80px;
+    height: 80px;
+    top: 50px;
+    left: 30%;
+     animation: css 2s ease 0.1s infinite;
+}
+
+#css3 i {
+    font-size: 32px;
+}
+
+@keyframes css {
+    0% {
+        top: 50px;
+    left: 30%;
+    }
+
+    50% {
+        top: 20px;
+        left: 30%;
+    }
+
+    100% {
+        top: 50px;
+        left: 30%;
+    }
+}
+
+#js {
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 80%;
+     animation: js 2s ease 0.1s infinite;
+}
+
+#js i {
+    font-size: 65px;
+}
+
+@keyframes js {
+    0% {
+        top: 20px;
+    left: 80%;
+    }
+
+    50% {
+      top:30px;
+    left: 84%;
+    }
+
+    100% {
+        top: 20px;
+    left: 80%;
+    }
+}
+
+#bootstrap {
+    width: 130px;
+    height: 130px;
+    top: 10px;
+    left: 5%;
+    animation: bootstrap 2s ease 0.1s infinite;
+}
+
+#bootstrap i {
+    font-size:22px;
+}
+
+@keyframes bootstrap {
+    0% {
+        top: 130px;
+        left:65%;
+    }
+
+    50% {
+        top: 100px;
+        left:65%;
+    }
+
+    100% {
+         top: 130px;
+        left:65%;
+    }
+}
+#git {
+    width: 130px;
+    height: 130px;
+    top: 10px;
+    left: 5%;
+    animation: git 2s ease 0.1s infinite;
+}
+
+#git i {
+    font-size: 65px;
+}
+
+@keyframes git {
+    0% {
+        top:80px;
+        left:-10%;
+    }
+
+    50% {
+        top: 100px;
+        left:-10%;
+    }
+
+    100% {
+        top: 80px;
+        left:-10%;
+    }
+}
+#github {
+    width: 30px;
+    height: 30px;
+    top: 100px;
+    left: 15%;
+    animation: github 2s ease 0.1s infinite;
+}
+
+#github i {
+    font-size: 15px;
+}
+
+@keyframes github {
+    0% {
+        top: 150px;
+        left:20%;
+    }
+
+    50% {
+        top: 170px;
+        left:20%;
+    }
+
+    100% {
+        top: 100px;
+        left:20%;
+    }
+}
+.skill i {
+    font-size: 44px;
+    color: white;
+}
+
+#Contact {
+    background-color: black;
+    padding: 50px;
+    display: flex;
+    gap: 200px;
+    overflow-x: hidden;
+}
+
+#contact-text {
+    width: 60%;
+}
+
+#contact-upText h2,
+#about-text h2,
+#skill-text h2,#project-text h2{
+    font-size: 48px;
+    color: gold;
+}
+
+#contact-upText p,
+#about-text p,
+#skill-text p,#project-text p{
+    font-size: 26px;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+#contact-upText {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+#info-items p {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+    color: whitesmoke;
+}
+
+#info-items p>i {
+    font-size: 20px;
+    color: rgb(247, 247, 100);
+    background-color: transparent;
+    border: 1px solid rgb(247, 247, 100);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-text>P {
+    font-size: 32px;
+    color: whitesmoke;
+}
+
+#contactForm {
+    background-color: rgba(31, 30, 30, 0.37);
+    border: 1px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 6px 10px rgba(255, 255, 255, 0.425);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding:20px;
+    width: 40%;
+    height: 400px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: var(--btn-padding);
+    border-radius: 8px;
+    border: none;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+
+    outline: none;
+
+}
+
+#ContactBtn {
+    padding: var(--btn-padding);
+    background-color: rgba(247, 247, 100, 1);
+    border: none;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width:768px) {
+    #nav {
+        justify-content: space-between;
+    }
+
+    #burgerMenu {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    #id-links {
+        display: none;
+    }
+#projects-container{
+    grid-template-columns: 1fr;
+}
+}
+@media only screen and (max-width:900px){
+    #projects-container{
+    grid-template-columns: 1fr 1fr;
+}
+#Contact{
+    flex-wrap: wrap;
+}
+#contact-text{
+    width: 100%;
+}
+#contactForm{
+    width: 100%;
+}
+}
