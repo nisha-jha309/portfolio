@@ -209,6 +209,7 @@
     background-color: black;
     padding: 50px 50px 0 50px;
     display: flex;
+    flex-wrap:wrap;
     align-items: center;
     height: 700px;
     gap: 100px;
@@ -612,6 +613,7 @@ padding: 30px 0;
     background-color: black;
     padding: 50px;
     display: flex;
+    flex-wrap: wrap;
     gap: 200px;
     overflow-x: hidden;
 }
@@ -669,7 +671,7 @@ padding: 30px 0;
     align-items: center;
 }
 
-#contact-text>P {
+#contact-text>p {
     font-size: 32px;
     color: whitesmoke;
 }
@@ -736,13 +738,8 @@ padding: 30px 0;
     #projects-container{
     grid-template-columns: 1fr 1fr;
 }
-#Contact{
-    flex-wrap: wrap;
-}
-#contact-text{
-    width: 100%;
-}
-#contactForm{
-    width: 100%;
+#contact-text>p {
+    font-size:24px;
+    color: whitesmoke;
 }
 }
