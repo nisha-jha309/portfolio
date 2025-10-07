@@ -387,6 +387,7 @@
     gap: 50px;
     justify-content: left;
     align-items: center;
+    margin: 0 50px;
 }
 
 #react {
@@ -759,8 +760,7 @@
 #aboutImage img {
      width: 250px;
     height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
+
 }
     #About {
         height: 900px;
