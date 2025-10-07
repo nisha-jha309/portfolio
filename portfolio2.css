@@ -33,7 +33,7 @@
 
 #logo>span {
     background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(247, 247, 100, 1) 28%, rgba(247, 125, 100, 1) 100%);
--webkit-background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -156,10 +156,12 @@
     cursor: pointer;
     font-size: 16px;
 }
-#viewResume{
+
+#viewResume {
     background-color: white;
     color: black;
 }
+
 #DownloadResumeBtn {
     padding: var(--btn-padding);
     color: white;
@@ -182,29 +184,12 @@
     background-color: transparent;
     color: white;
 }
-@media only screen and (max-width:768px) {
-    #Home {
-        height: 600px;
-    }
-    #hi {
-        font-size: 40px;
-    }
 
-    #typeWriter {
-        font-size: 20px;
-    }
-
-    #home-para {
-        width: 100%;
-        font-size: 12px;
-    }
-}
 
 #About {
     background-color: black;
     padding: 50px 50px 0 50px;
     display: flex;
-    flex-wrap:wrap;
     align-items: center;
     height: 700px;
     gap: 100px;
@@ -252,12 +237,12 @@
     background-color: black;
 }
 
-#projects-container{
-padding: 30px 0;
+#projects-container {
+    padding: 30px 0;
     display: grid;
-    gap:30px;
+    gap: 30px;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .project {
@@ -267,9 +252,9 @@ padding: 30px 0;
     padding: 20px;
     gap: 10px;
     backdrop-filter: blur(10px);
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     height: 500px;
-    width:100%;
+    width: 100%;
 }
 
 .project>div:nth-child(2) {
@@ -286,9 +271,9 @@ padding: 30px 0;
     justify-content: center;
     border: 1px solid rgba(34, 193, 195, 1);
     color: rgba(34, 193, 195, 1);
-    border-radius:50%;
-    padding:4px 8px;
-    font-size:14px;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 14px;
 }
 
 .projectDemo i {
@@ -303,9 +288,9 @@ padding: 30px 0;
 }
 
 .projectImage img {
-    height:100%;
+    height: 100%;
     width: 100%;
-    object-fit:fill;
+    object-fit: fill;
 }
 
 .projectName {
@@ -317,7 +302,7 @@ padding: 30px 0;
     font-size: 14px;
     line-height: 1.2;
     display: -webkit-box;
-    -webkit-line-clamp:2;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -360,7 +345,7 @@ padding: 30px 0;
     padding: 50px 150px;
     background-color: #000;
     position: relative;
-    height:600px;
+    height: 600px;
 }
 
 .skill {
@@ -404,7 +389,7 @@ padding: 30px 0;
     height: 200px;
     top: 100px;
     left: 50%;
-        animation: react 2s ease 0.1s infinite;
+    animation: react 2s ease 0.1s infinite;
 
 }
 
@@ -414,18 +399,18 @@ padding: 30px 0;
 
 @keyframes react {
     0% {
-      top: 100px;
-    left: 40%;
+        top: 100px;
+        left: 40%;
     }
 
     50% {
-     top: 105px;
-    left: 40%;
+        top: 105px;
+        left: 40%;
     }
 
     100% {
-     top: 100px;
-    left: 40%;
+        top: 100px;
+        left: 40%;
     }
 }
 
@@ -463,7 +448,7 @@ padding: 30px 0;
     height: 80px;
     top: 50px;
     left: 30%;
-     animation: css 2s ease 0.1s infinite;
+    animation: css 2s ease 0.1s infinite;
 }
 
 #css3 i {
@@ -473,7 +458,7 @@ padding: 30px 0;
 @keyframes css {
     0% {
         top: 50px;
-    left: 30%;
+        left: 30%;
     }
 
     50% {
@@ -492,7 +477,7 @@ padding: 30px 0;
     height: 150px;
     top: 20px;
     left: 80%;
-     animation: js 2s ease 0.1s infinite;
+    animation: js 2s ease 0.1s infinite;
 }
 
 #js i {
@@ -502,17 +487,17 @@ padding: 30px 0;
 @keyframes js {
     0% {
         top: 20px;
-    left: 80%;
+        left: 80%;
     }
 
     50% {
-      top:30px;
-    left: 84%;
+        top: 30px;
+        left: 84%;
     }
 
     100% {
         top: 20px;
-    left: 80%;
+        left: 80%;
     }
 }
 
@@ -525,25 +510,26 @@ padding: 30px 0;
 }
 
 #bootstrap i {
-    font-size:22px;
+    font-size: 22px;
 }
 
 @keyframes bootstrap {
     0% {
         top: 130px;
-        left:65%;
+        left: 65%;
     }
 
     50% {
         top: 100px;
-        left:65%;
+        left: 65%;
     }
 
     100% {
-         top: 130px;
-        left:65%;
+        top: 130px;
+        left: 65%;
     }
 }
+
 #git {
     width: 130px;
     height: 130px;
@@ -558,20 +544,21 @@ padding: 30px 0;
 
 @keyframes git {
     0% {
-        top:80px;
-        left:-10%;
+        top: 80px;
+        left: -10%;
     }
 
     50% {
         top: 100px;
-        left:-10%;
+        left: -10%;
     }
 
     100% {
         top: 80px;
-        left:-10%;
+        left: -10%;
     }
 }
+
 #github {
     width: 30px;
     height: 30px;
@@ -587,19 +574,20 @@ padding: 30px 0;
 @keyframes github {
     0% {
         top: 150px;
-        left:20%;
+        left: 20%;
     }
 
     50% {
         top: 170px;
-        left:20%;
+        left: 20%;
     }
 
     100% {
         top: 100px;
-        left:20%;
+        left: 20%;
     }
 }
+
 .skill i {
     font-size: 44px;
     color: white;
@@ -619,14 +607,16 @@ padding: 30px 0;
 
 #contact-upText h2,
 #about-text h2,
-#skill-text h2,#project-text h2{
+#skill-text h2,
+#project-text h2 {
     font-size: 48px;
     color: gold;
 }
 
 #contact-upText p,
 #about-text p,
-#skill-text p,#project-text p{
+#skill-text p,
+#project-text p {
     font-size: 26px;
     color: whitesmoke;
     text-transform: uppercase;
@@ -680,7 +670,7 @@ padding: 30px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding:20px;
+    padding: 20px;
     width: 50%;
     height: 400px;
 }
@@ -711,9 +701,11 @@ padding: 30px 0;
     #nav {
         justify-content: space-between;
     }
-     #projects-container{
-    grid-template-columns: 1fr;
-}
+
+    #projects-container {
+        grid-template-columns: 1fr;
+    }
+
     #burgerMenu {
         display: block;
     }
@@ -725,83 +717,86 @@ padding: 30px 0;
     #id-links {
         display: none;
     }
-    #Skills{
-        overflow-x: hidden;
-    }
-#projects-container{
-    grid-template-columns: 1fr;
-}
-#contact{
-    gap:100px;
-    flex-wrap: wrap;
-}
-#contact-text{
-    width: 100%;
-}
-#contactForm{
-    width: 100%;
-}
-#contact-text>p {
-    font-size:24px;
-    color: whitesmoke;
-}
-#aboutImage {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-#About{
-    height: 900px;
-    gap: 50px;
-}
-#aboutPara{
-    font-size: 14px;
-}
-#about-text{
-    width:100%;
-}
-#Home{
-    padding: 0 50px;
-}
-#home-text{
-    padding: 50px;
-}
-#home-para {
-    width: 100%;
-}
-#viewWork,#viewResume{
-    font-size:12px;
-}
-}
-@media only screen and (min-width: 769px) and (max-width: 900px){
-    #projects-container{
-    grid-template-columns: 1fr 1fr;
-}
-    #Skills{
-        overflow-x: hidden;
-    }
-    #aboutImage {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin: 0 auto;
 
+    #Skills {
+        overflow-x: hidden;
+    }
+
+    #projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    #contact {
+        gap: 100px;
+        flex-wrap: wrap;
+    }
+
+    #contact-text {
+        width: 100%;
+    }
+
+    #contactForm {
+        width: 100%;
+    }
+
+    #contact-text>p {
+        font-size: 24px;
+        color: whitesmoke;
+    }
+
+    #aboutImage {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    #About {
+        height: 900px;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    #aboutPara {
+        font-size: 14px;
+    }
+
+    #about-text {
+        width: 100%;
+    }
+
+    #Home {
+        padding: 0 50px;
+        height: 600px;
+    }
+
+    #home-text {
+        padding: 50px;
+    }
+
+    #home-para {
+        width: 100%;
+        font-size: 12px;
+    }
+     #typeWriter {
+        font-size: 20px;
+    }
+    #viewWork,
+    #viewResume {
+        font-size: 12px;
+    }
 }
-#About{
-    height: 900px;
-    gap: 50px;
-}
-#aboutImage {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-#aboutPara{
-    font-size: 14px;
-}
-#about-text{
-    width:100%;
-}
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    #hi{
+        font-size: 48px;
+    }
+    #projects-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #Skills {
+        overflow-x: hidden;
+    }
+
 }
