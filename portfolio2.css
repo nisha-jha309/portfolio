@@ -349,7 +349,7 @@
     align-items: left;
     padding: 50px;
     background-color: #000;
-    position: relative;
+    /* position: relative; */
     height: 600px;
 }
 
@@ -387,7 +387,8 @@
     gap: 10px;
     justify-content: left;
     align-items: center;
-    margin: 0 50px;
+    padding: 0 50px;
+    position: relative;
 }
 
 #react {
