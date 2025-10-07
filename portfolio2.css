@@ -751,10 +751,17 @@ padding: 30px 0;
 
 }
 #About{
-    height: 800px;
+    height: 900px;
+    gap: 50px;
+}
+#aboutPara{
+    font-size: 14px;
 }
 #about-text{
     width:100%;
+}
+#Home{
+    padding: 0 50px;
 }
 }
 @media only screen and (min-width: 769px) and (max-width: 900px){
