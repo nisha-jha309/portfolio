@@ -7,6 +7,7 @@
 
 :root {
     --btn-padding: 10px 20px;
+    --btn-padding-s:5px 10px;
     --btn-backgroundColor: rgb(247, 247, 100);
     --background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(247, 247, 100, 1) 28%, rgba(247, 125, 100, 1) 100%);
 
@@ -110,12 +111,12 @@
     font-size: 60px;
     font-weight: 500;
     color: white;
-    margin-bottom: 10px;
 }
 
 #typeWriter {
     color: var(--btn-backgroundColor);
     font-size: 42px;
+    margin-bottom: 10px;
 }
 
 #home-para {
@@ -755,8 +756,8 @@
 
     #About {
         height: 900px;
+        flex-direction: column;
         gap: 50px;
-        flex-wrap: wrap;
     }
 
     #aboutPara {
@@ -786,6 +787,7 @@
     #viewWork,
     #viewResume {
         font-size: 12px;
+        padding:var(--btn-padding-s);
     }
     #skill-text{
         text-align: left;
