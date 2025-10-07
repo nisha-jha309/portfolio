@@ -772,9 +772,11 @@
         padding: 0 50px;
         height: 600px;
     }
-
+    #hi{
+        font-size: 40px;
+    }
     #home-text {
-        padding: 50px;
+        padding: 30px;
     }
 
     #home-para {
