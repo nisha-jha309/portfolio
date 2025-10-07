@@ -154,6 +154,7 @@
     border-radius: 8px;
     text-decoration: none;
     cursor: pointer;
+    font-size: 16px;
 }
 #viewResume{
     background-color: white;
@@ -762,6 +763,12 @@ padding: 30px 0;
 }
 #Home{
     padding: 0 50px;
+}
+#home-text{
+    padding: 50px;
+}
+#viewWork,#viewResume{
+    font-size:12px;
 }
 }
 @media only screen and (min-width: 769px) and (max-width: 900px){
