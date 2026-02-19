@@ -599,7 +599,7 @@
 }
 
 .skill i {
-    font-size: 44px;
+    /* font-size: 44px; */
     color: white;
 }
 
@@ -821,4 +821,84 @@
         overflow-x: hidden;
     }
 
+}
+/* ================= MOBILE VERSION ================= */
+@media (max-width: 768px) {
+
+    #react {
+        width: 120px;
+        height: 120px;
+        top: 80px;
+        left: 35%;
+    }
+
+    #react i {
+        font-size: 45px;
+    }
+
+    #html5 {
+        width: 90px;
+        height: 90px;
+        top: 10px;
+        left: 10%;
+    }
+
+    #html5 i {
+        font-size: 40px;
+    }
+
+    #css3 {
+        width: 60px;
+        height: 60px;
+        top: 60px;
+        left: 55%;
+    }
+
+    #css3 i {
+        font-size: 25px;
+    }
+
+    #js {
+        width: 100px;
+        height: 100px;
+        top: 30px;
+        left: 65%;
+    }
+
+    #js i {
+        font-size: 45px;
+    }
+
+    #bootstrap {
+        width: 90px;
+        height: 90px;
+        top: 140px;
+        left: 55%;
+    }
+
+    #bootstrap i {
+        font-size: 18px;
+    }
+
+    #git {
+        width: 90px;
+        height: 90px;
+        top: 150px;
+        left: 5%;
+    }
+
+    #git i {
+        font-size: 45px;
+    }
+
+    #github {
+        width: 40px;
+        height: 40px;
+        top: 200px;
+        left: 40%;
+    }
+
+    #github i {
+        font-size: 18px;
+    }
 }
