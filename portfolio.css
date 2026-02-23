@@ -823,7 +823,7 @@
 
 }
 /* ================= MOBILE VERSION ================= */
-@media (max-width: 768px) {
+@media only screen and  (max-width: 768px) {
 
     #react {
         width: 120px;
@@ -900,5 +900,84 @@
 
     #github i {
         font-size: 18px;
+    }
+}
+@media only screen and (max-width: 480px) {
+
+    #react {
+        width: 90px;
+        height: 90px;
+        top: 60px;
+        left: 32%;
+    }
+
+    #react i {
+        font-size: 35px;
+    }
+
+    #html5 {
+        width: 70px;
+        height: 70px;
+        top: 10px;
+        left: 8%;
+    }
+
+    #html5 i {
+        font-size: 28px;
+    }
+
+    #css3 {
+        width: 50px;
+        height: 50px;
+        top: 50px;
+        left: 55%;
+    }
+
+    #css3 i {
+        font-size: 20px;
+    }
+
+    #js {
+        width: 75px;
+        height: 75px;
+        top: 25px;
+        left: 65%;
+    }
+
+    #js i {
+        font-size: 32px;
+    }
+
+    #bootstrap {
+        width: 65px;
+        height: 65px;
+        top: 115px;
+        left: 58%;
+    }
+
+    #bootstrap i {
+        font-size: 16px;
+    }
+
+    #git {
+        width: 70px;
+        height: 70px;
+        top: 120px;
+        left: 5%;
+    }
+
+    #git i {
+        font-size: 32px;
+    }
+
+    #github {
+        width: 35px;
+        height: 35px;
+        top: 170px;
+        left: 42%;
+    }
+
+    #github i {
+        font-size: 14px;
     }
 }
